@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-    """prints all the names defined by the compiled module hidden_4.pyc"""
+    """Print all names defined by hidden_4 module."""
     import hidden_4
 
     names = dir(hidden_4)
