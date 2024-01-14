@@ -2,7 +2,7 @@
 def print_matrix_integer(matrix=[[]]):
     for row in range(len(matrix)):
         for col in range(len(matrix[row])):
-            if item != len(matrix[row]):
+            if col != len(matrix[row]):
                 stop = ' '
             else:
                 stop = ''
