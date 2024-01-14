@@ -1,0 +1,30 @@
+[main 25df05e] 4: changed = to
+ 3 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 python-data_structures/=
+100755 blob 438ed160569a7192e01807cda1e9d4ef00787385	0-main.py
+100755 blob 272b1216049b7e7e22f0edbf46cc307580e47cd0	0-print_list_integer.py
+100755 blob a2e4fe7dcc42bd6fe3acc05fdc69cc41fb0228e6	1-element_at.py
+100755 blob 9774ec28c751075366c40ad0248f379aaa3e60b9	1-main.py
+100755 blob 65d6f86ebc76a1db1f19c6756f42eb3a1507a7c0	10-divisible_by_2.py
+100755 blob f3e75d2da2edeeaddeac45d694e004113bba3df0	10-main.py
+100755 blob 4e6f7545cda66f0898bcc68cbfb512a5e7d40bd8	11-delete_at.py
+100755 blob 27967c4af4d247606c03433d3af599f3df49d44a	11-main.py
+100755 blob da532ee349e6f7677ed555c269bef07bc4249b7a	12-switch.py
+100755 blob 78d1ebef7cdaa206d41766139437257d65787fdc	2-main.py
+100755 blob 5bfba1ce008306fc6f428b3b74cc18ddd1cdf4dc	2-replace_in_list.py
+100755 blob cd8fd80d0e9df8e9f5456e16a8404f7b05364997	3-main.py
+100755 blob bcacc8b187b377514df52013de5c64b7f9d60aba	3-print_reversed_list_integer.py
+100755 blob fb9c6dda096567340507342fb9ac358e90512727	4-main.py
+100755 blob df9cc71e9093af9996d2c52aacc97e1be0c9bbce	4-new_in_list.py
+100755 blob 763aeec2f8feb12a6239ba7ce4c7077504af262f	5-main.py
+100755 blob 738f669ed052d76ed6427cdb4d604d3f26df02b5	5-no_c.py
+100755 blob b533f067631059f9cf13f985becc0cce740be5fa	6-main.py
+100755 blob 2531a6f37442ac28982128e02ef845d2cef64a9f	6-print_matrix_integer.py
+100755 blob 6b87d58e49f8d18cd29e7001538fb0182e8f4839	7-add_tuple.py
+100755 blob f20dbf75251ed79ed310fb39ee1c858f615070ce	7-main.py
+100755 blob 17e234c3610ba3e2d1557d10a1987bf7bff8671f	8-main.py
+100755 blob 40ba425f6dc372e2cd145b4289b309fa7290020f	8-multiple_returns.py
+100755 blob 927fa090fafbf066800943ca63d11efccc9cde20	9-main.py
+100755 blob 3387b7d45c92f8d7bfeb61e2b189460d0d0e4426	9-max_integer.py
+100644 blob e69de29bb2d1d6434b8b29ae775ad8c2e48c5391	=
+100644 blob 524c1f25b7a5f4c403362a1e2c339ab8ac1db746	README.md
