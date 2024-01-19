@@ -1,0 +1,1 @@
+Test-Driven Development (TDD) is a method where you write tests before the code. It helps improve code quality, makes the system design simpler, and reduces project costs by catching issues early. It also prevents bugs before they happen and serves as good documentation. This way the code is easier to modify and extend in the future.
