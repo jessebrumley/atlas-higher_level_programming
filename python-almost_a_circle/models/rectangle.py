@@ -40,4 +40,3 @@ class Rectangle(Base):
     def y(self):
         """Set/get the y coordinate of the Rectangle."""
         return self.__y
-    
