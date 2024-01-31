@@ -2,6 +2,7 @@
 
 """Defines a base class """
 
+
 class Base:
     """
     Private Class Attributes:
