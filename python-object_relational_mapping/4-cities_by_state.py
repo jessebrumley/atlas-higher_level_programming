@@ -7,22 +7,18 @@ import sys
 
 if __name__ == "__main__":
 
-    usr = sys.argv[1]
-    pw = sys.argv[2]
-    database = sys.argv[3]
+    usrn = sys.argv[1]
+    pswd = sys.argv[2]
+    dtbs = sys.argv[3]
 
-    db = MySQLdb.connect(host='localhost', user=usr, passwd=pw, db=database)
+    db = MySQLdb.connect(host="localhost", user=usrn, passwd=pswd, db=dtbs)
+
     cursor = db.cursor()
 
-    query = """SELECT cities.id, cities.name, states.name
-    FROM cities
-    JOIN states
-    ON states.id = cities.state_id
-    ORDER BY cities.id ASC"""
+    cursor.execute("SELECT * FROM states")
 
-    cursor.execute(query)
-    for r in cursor.fetchall():
-        print(r)
+    for row in cursor.fetchall():
+        print(row)
 
     cursor.close()
     db.close()
