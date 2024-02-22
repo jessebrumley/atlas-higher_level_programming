@@ -2,23 +2,18 @@
 
 """ lists all states from the database hbtn_0e_usa """
 
-import MySQLdb
 import sys
+from model_state import Base, State
+from sqlalchemy import (create_engine)
+from sqlalchemy.orm import sessionmaker
+
 
 if __name__ == "__main__":
-
-    usrn = sys.argv[1]
-    pswd = sys.argv[2]
-    dtbs = sys.argv[3]
-
-    db = MySQLdb.connect(host="localhost", user=usrn, passwd=pswd, db=dtbs)
-
-    cursor = db.cursor()
-
-    cursor.execute("SELECT * FROM states")
-
-    for row in cursor.fetchall():
-        print(row)
-
-    cursor.close()
-    db.close()
+    engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'
+                           .format(sys.argv[1], sys.argv[2], sys.argv[3]))
+    Base.metadata.create_all(engine)
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    new_instance = session.query(State).filter_by(id=2).first()
+    new_instance.name = 'New Mexico'
+    session.commit()
