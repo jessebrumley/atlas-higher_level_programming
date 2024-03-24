@@ -3,8 +3,8 @@
 ## Description
 The aim of this project is to learn the basics of the Javascript programming language
 
-## Tasks
-Task                            | Description
+## Tasks  
+Task                            | Description  
 0. First constant, first print  | A script that prints "JavaScript is amazing"
 1. 3 languages                  | A script that prints "C is fun", "Python is cool", and "Javascript is amazing"
 2. Arguments                    | A script that prints a message depending of the number of arguments passed
