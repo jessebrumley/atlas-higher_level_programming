@@ -5,9 +5,5 @@ A script that prints the first argument passed to it
 if (process.argv[2] === undefined) {
   console.log('No argument');
 } else {
-  const args = process.argv.slice(2);
-
-  for (const arg of args) {
-    console.log(arg);
-  }
+  console.log(process.argv[2]);
 }
