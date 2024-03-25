@@ -3,11 +3,10 @@
 A script that computes and prints a factorial
 */
 function factorial (a) {
-  let result = parseInt(0);
-  for (let i = 0; i <= a; i++) {
-    result += i;
+  if (isNaN(a) || a === 0) {
+    return (1);
   }
-  console.log(result);
+  return (a * factorial(a - 1));
 }
 
-factorial(Number(process.argv[2]));
+console.log(factorial(Number(process.argv[2])));
