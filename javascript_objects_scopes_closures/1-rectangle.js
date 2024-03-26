@@ -5,7 +5,7 @@ Takes the Rectangle defined in task 0 and defines it with a width and height arg
 class Rectangle {
   constructor (w, h) {
     this.width = w;
-    this.height = h
+    this.height = h;
   }
 }
 
