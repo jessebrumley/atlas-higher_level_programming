@@ -11,6 +11,6 @@ if (process.argv[2] === undefined) {
       console.error(err);
     } else {
       console.log(data);
-    }    
+    }
   });
 }
