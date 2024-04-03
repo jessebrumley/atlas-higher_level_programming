@@ -160,3 +160,4 @@ cython_debug/
 #.idea/
 javascript_objects_scopes_closures/*-main.js
 javascript_objects_scopes_closures/test.js
+javascript-web_scraping/test.js
