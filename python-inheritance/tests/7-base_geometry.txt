@@ -1,0 +1,106 @@
+Test for 7-base_geometry
+
+-------------------------------------------
+
+case 0: import
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>>
+-------------------------------------------
+
+case 1: common case
+
+>>> base_geometry = BaseGeometry()
+>>> base_geometry.append(1)
+>>> base_geometry.append(4)
+>>> base_geometry.append(2)
+>>> base_geometry.append(3)
+>>> base_geometry.append(5)
+>>> print(base_geometry)
+[1, 4, 2, 3, 5]
+>>> base_geometry.print_sorted()
+[1, 2, 3, 4, 5]
+>>> print(base_geometry)
+[1, 4, 2, 3, 5]
+>>>
+
+-------------------------------------------
+
+case 2: not defined object
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> base_geometry2.print_sorted()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'base_geometry2' is not defined
+>>>
+
+-------------------------------------------
+
+case 3: passed a list
+
+>>> a = [1, 9, 4]
+>>> base_geometry = BaseGeometry(a)
+>>> base_geometry.print_sorted()
+[1, 4, 9]
+>>>
+
+-------------------------------------------
+
+case 4: empty list
+
+>>> a = []
+>>> base_geometry = BaseGeometry(a)
+>>> base_geometry.print_sorted()
+[]
+>>>
+
+-------------------------------------------
+
+case 5: unique number
+
+>>> base_geometry = BaseGeometry()
+>>> base_geometry.append(1)
+>>> base_geometry.print_sorted()
+[1]
+>>> print(base_geometry)
+[1]
+>>>
+
+-------------------------------------------
+
+case 6: same number
+
+>>> base_geometry2 = BaseGeometry()
+>>> base_geometry2.append(1)
+>>> base_geometry2.append(1)
+>>> base_geometry2.append(1)
+>>> base_geometry2.append(1)
+>>> base_geometry2.print_sorted()
+[1, 1, 1, 1]
+>>>
+
+-------------------------------------------
+
+case 7: parent object
+>>> base_geometry = [1, 2, 3]
+>>> base_geometry.print_sorted()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'print_sorted'
+>>>
+
+-------------------------------------------
+
+case 8: negative numbers
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> base_geometry = BaseGeometry()
+>>> base_geometry.append(5)
+>>> base_geometry.append(1)
+>>> base_geometry.append(-1)
+>>> base_geometry.append(51)
+>>> base_geometry.append(-5)
+>>> base_geometry.print_sorted()
+[-5, -1, 1, 5, 51]
+>>>
+
