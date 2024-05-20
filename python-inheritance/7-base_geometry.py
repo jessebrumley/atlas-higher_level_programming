@@ -18,9 +18,11 @@ class BaseGeometry:
         print(sorted(self.lst))
 
     def area(self):
+        """defines area of BaseGeometry class """
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
+        """Validate a value as an integer"""
         if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
