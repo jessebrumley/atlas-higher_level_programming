@@ -12,9 +12,13 @@ def read_file(filename=""):
     None
     """
     with open(filename, 'r', encoding='utf-8') as file:
-        content = file.read().rstrip()
+        content = file.read().strip()
         
-        print(content)
+        if content.strip():
+          print(content)
+          
+        else:
+          pass
 
 if __name__ == "__main__":
     filename = "example.txt"
