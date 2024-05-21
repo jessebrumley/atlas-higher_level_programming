@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Reads and prints a text file"""
 
+
 def read_file(filename=""):
     """
     Reads a text file in UTF-8 encoding and prints its content to stdout.
@@ -13,13 +14,13 @@ def read_file(filename=""):
     """
     with open(filename, 'r', encoding='utf-8') as file:
         content = file.read().strip()
-        
+
         if content.strip():
-          print(content)
-          
+            print(content)
+
         else:
-          pass
+            pass
+
 
 if __name__ == "__main__":
-    filename = ""
-    read_file(filename)
+    read_file()
