@@ -11,15 +11,14 @@ def read_file(filename=""):
     Returns:
     None
     """
-    try:
-      with open(filename, 'r', encoding='utf-8') as file:
-          content = file.read().strip()
+    with open(filename, 'r', encoding='utf-8') as file:
+        content = file.read().strip()
+        
+        if content.strip():
+          print(content)
           
-          if content.strip():
-            print(content)
-            
-          else:
-            pass
+        else:
+          pass
 
 if __name__ == "__main__":
     filename = ""
