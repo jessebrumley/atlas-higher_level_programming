@@ -10,10 +10,16 @@ def write_file(filename="", text=""):
     text (str): the text to add
 
     Returns:
-    None
+    int: The number of characters written
     """
     if not filename:
         filename = "output.txt"
 
     with open(filename, 'w', encoding='utf-8') as file:
         file.write(text)
+
+        return len(text)
+
+
+if __name__ == "__main__":
+  write_file()
