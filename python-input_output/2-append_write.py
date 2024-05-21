@@ -14,19 +14,16 @@ def append_write(filename="", text=""):
     Returns:
     int: The number of characters added
     """
-    with open(filename, 'a', encoding='utf-8') as file:
-        if file:
-            original_content = file.read()
-            original_length = len(original_content)
-        else:
-            original_length = 0
 
+    with open(filename, 'a', encoding='utf-8') as file:
         file.write(text)
 
+    with open(filename, 'r', encoding='utf-8') as file:
         new_content = file.read()
-        new_length = len(new_content)
 
-        return (new_length - original_length)
+    new_length = len(new_content)
+
+    return new_length - len(filename)
 
 
 if __name__ == "__main__":
