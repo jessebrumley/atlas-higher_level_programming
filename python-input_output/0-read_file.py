@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def read_file(filename=""):
     """
     Reads a text file in UTF-8 encoding and prints its content to stdout.
