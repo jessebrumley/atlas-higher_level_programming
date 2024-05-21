@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Saves text to a file"""
 
 def write_file(filename="", text=""):
     """
@@ -6,7 +7,7 @@ def write_file(filename="", text=""):
 
     Parameters:
     filename (str): The name of the file to read or create
-    text (str): The text to add
+    text (str): the text to add
 
     Returns:
     None
