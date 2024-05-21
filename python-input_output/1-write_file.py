@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Saves text to a file"""
 
+
 def write_file(filename="", text=""):
     """
     Writes a given text to a file and returns the number of characters written
@@ -22,4 +23,4 @@ def write_file(filename="", text=""):
 
 
 if __name__ == "__main__":
-  write_file()
+    write_file()
