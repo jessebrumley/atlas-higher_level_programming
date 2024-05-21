@@ -18,12 +18,7 @@ def append_write(filename="", text=""):
     with open(filename, 'a', encoding='utf-8') as file:
         file.write(text)
 
-    with open(filename, 'r', encoding='utf-8') as file:
-        new_content = file.read()
-
-    new_length = len(new_content)
-
-    return new_length - len(filename)
+    return len(text)
 
 
 if __name__ == "__main__":
