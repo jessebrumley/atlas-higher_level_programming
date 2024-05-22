@@ -4,6 +4,7 @@
 Defines class of students
 """
 
+
 class Student:
     """
     Student class
