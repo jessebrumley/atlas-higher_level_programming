@@ -4,6 +4,7 @@
 Module containing Student class
 """
 
+
 class Student:
     """
     Student class with to_json and reload_from_json methods
@@ -32,13 +33,20 @@ class Student:
         Converts the Student object to a JSON-like dictionary.
 
         Args:
-            attrs (list[str], optional): List of attribute names to include in the output dictionary. Defaults to None, meaning all attributes will be included.
+            attrs (list[str], optional): List of attribute names to include
+            in the output dictionary. Defaults to None, meaning all
+            attributes will be included.
 
         Returns:
-            dict: A dictionary representation of the Student object, optionally filtered by the provided attribute names.
+            dict: A dictionary representation of the Student object,
+            optionally filtered by the provided attribute names.
         """
         if attrs is None:
-            return {k: v for k, v in vars(self).items() if not k.startswith('_')}
+            return {
+                        k: v
+                        for k, v in vars(self).items()
+                        if not k.startswith('_')
+                    }
         else:
             return {attr: getattr(self, attr) for attr in attrs}
 
@@ -47,7 +55,7 @@ class Student:
         Reloads the Student object from a JSON-like dictionary.
 
         Args:
-            json (dict): A dictionary representing the state of the Student object.
+            json (dict): A dictionary representing the Student object.
         """
         for key, value in json.items():
             setattr(self, key, value)
