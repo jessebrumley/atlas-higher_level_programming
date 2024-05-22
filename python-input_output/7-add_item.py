@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""adds all arguments to a Python list and then saves them to a file"""
+"""Adds all arguments to a Python list and then saves them to a file"""
 import sys
 from os.path import isfile
 
@@ -21,7 +21,7 @@ def main():
     else:
         obj_list = []
 
-    for arg in range(1, len(sys.argv)):
-        obj_list.append(sys.argv(arg))
+    for arg in sys.argv[1:]:
+        obj_list.append(arg)
 
     save(obj_list, 'add_item.json')
