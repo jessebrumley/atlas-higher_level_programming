@@ -21,4 +21,6 @@ def save_to_json_file(my_obj, filename):
 
 
 if __name__ == "__main__":
+    my_obj = {"key": "value"}
+    filename = "output.json"
     save_to_json_file()
