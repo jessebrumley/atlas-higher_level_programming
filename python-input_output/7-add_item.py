@@ -24,4 +24,4 @@ def main():
     for arg in sys.argv[1:]:
         obj_list.append(arg)
 
-    save(obj_list, 'add_item.json')
+    save(obj_list, './add_item.json')
