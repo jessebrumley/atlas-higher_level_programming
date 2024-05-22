@@ -21,7 +21,7 @@ def main():
     else:
         obj_list = []
 
-    for arg in sys.argv[1:]:
-        obj_list.append(arg)
+    for arg in range(1, len(sys.argv)):
+        obj_list.append(sys.argv(arg))
 
     save(obj_list, 'add_item.json')
