@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 
 """
-defines class of students
+Defines class of students
 """
-
 
 class Student:
     """
@@ -22,11 +21,11 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        dict = vars(self)
+        student_dict = vars(self)
         if attrs is not None:
-            new_dict = dict()
+            new_dict = {}
             for key in attrs:
-                if key in dict:
-                    new_dict[key] = dict[key]
+                if key in student_dict:
+                    new_dict[key] = student_dict[key]
             return new_dict
-        return dict
+        return student_dict
