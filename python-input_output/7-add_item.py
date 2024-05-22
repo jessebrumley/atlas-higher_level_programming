@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""adds all arguments to a Python list and then saves them to a file"""
 import sys
 from os.path import isfile
 
@@ -8,6 +9,11 @@ load = __import__('6-load_from_json_file').load_from_json_file
 def main():
     """
     adds all arguments to a Python list and then saves them to a file
+    
+    Parameters:
+    All command line arguements after the filename
+    
+    Return: None
     """
     if isfile('./add_item.json'):
         obj_list = load('./add_item.json')
