@@ -3,8 +3,8 @@
 import sys
 from os.path import isfile
 
-save = __import__('5-save_to_json_file').save_to_json_file
-load = __import__('6-load_from_json_file').load_from_json_file
+_save = __import__("5-save_to_json_file").save_to_json_file
+_load = __import__("6-load_from_json_file").load_from_json_file
 
 
 def main():
@@ -16,12 +16,16 @@ def main():
 
     Return: None
     """
-    if isfile('./add_item.json'):
-        obj_list = load('./add_item.json')
+    if isfile('add_item.json'):
+        obj_list = _load('add_item.json')
     else:
         obj_list = []
 
     for arg in sys.argv[1:]:
         obj_list.append(arg)
 
-    save(obj_list, './add_item.json')
+    _save(obj_list, 'add_item.json')
+
+
+if __name__ == "__main__":
+    main()
