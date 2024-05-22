@@ -21,5 +21,5 @@ def load_from_json_file(filename):
 
 
 if __name__ == "__main__":
-    filename = "output.json"
+    filename = "out.json"
     load_from_json_file(filename)
