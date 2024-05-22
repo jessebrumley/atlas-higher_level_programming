@@ -4,7 +4,7 @@
 import json
 
 
-def def save_to_json_file(my_obj, filename):
+def save_to_json_file(my_obj, filename):
     """
     Writes an Object to a text file, using a JSON representation
 
@@ -17,8 +17,8 @@ def def save_to_json_file(my_obj, filename):
     """
 
     with open(filename, 'a', encoding='utf-8') as file:
-        file.write(json.dumps(my_str))
+        file.write(json.dumps(my_obj))
 
 
 if __name__ == "__main__":
-    def save_to_json_file():
+    save_to_json_file()
