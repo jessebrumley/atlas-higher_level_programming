@@ -8,7 +8,7 @@ class to define Student attributes
 class Student:
     """
     Student class
-    
+
     to_json: creates a json-like dictionary
 
     Args:
