@@ -15,9 +15,13 @@ def save_to_json_file(my_obj, filename):
     Returns:
     None
     """
+    if my_obj:
+        object = json.dumps(my_obj)
+    else:
+        pass
 
     with open(filename, 'a', encoding='utf-8') as file:
-        file.write(json.dumps(my_obj))
+        file.write(object)
 
 
 if __name__ == "__main__":
