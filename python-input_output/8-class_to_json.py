@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """returns the dictionary description with simple data structure"""
 
+
 def class_to_json(obj):
     """
     returns the dictionary description with simple data structure
@@ -10,7 +11,7 @@ def class_to_json(obj):
     Parameters:
     obj: an instance of a Class, all objects of this Class must
     already be serializable (list, dictionary, string, integer and boolean)
-    
+
     Returns:
     A dictionary with a simple data structure
     """
