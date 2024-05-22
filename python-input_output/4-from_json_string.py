@@ -9,7 +9,7 @@ def from_json_string(my_str):
     Converts a JSON string to a Python Data Structure Object
 
     Parameters:
-    my_str The JSON string to convert to Python Object
+    my_str: The JSON string to convert to Python Object
 
     Returns:
     The python object

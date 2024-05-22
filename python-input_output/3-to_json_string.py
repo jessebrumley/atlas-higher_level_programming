@@ -9,10 +9,10 @@ def to_json_string(my_obj):
     Converts a Python object to a JSON string
 
     Parameters:
-    my_obj The Python object to convert to JSON
+    my_obj: The Python object to convert to JSON
 
     Returns:
-    The JSON representation of the object
+    The JSON: representation of the object
     """
     return json.dumps(my_obj)
 
