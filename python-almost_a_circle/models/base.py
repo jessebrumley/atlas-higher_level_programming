@@ -2,13 +2,12 @@
 
 """The “base” of all other classes in this project"""
 
-
-Class Base:
+class Base:
     """
     Base Class model used as template for all other classes in this project
 
     Class Attributes:
-        __nb_object (int): Number of Bases.
+        __nb_objects (int): Number of Bases.
     """
 
     __nb_objects = 0
@@ -17,5 +16,5 @@ Class Base:
         if id is not None:
             self.id = id
         else:
-            Base.__nb_objects += 1
-            self.id = self.__nb_objects
+            self.__class__.__nb_objects += 1
+            self.id = self.__class__.__nb_objects
