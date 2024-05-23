@@ -2,6 +2,7 @@
 
 """The “base” of all other classes in this project"""
 
+
 class Base:
     """
     Base Class model used as template for all other classes in this project
