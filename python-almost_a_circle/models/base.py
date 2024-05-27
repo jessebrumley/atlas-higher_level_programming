@@ -25,8 +25,9 @@ class Base:
         """
         Returns a list of JSON strings
         """
+        empty_list = "[]"
         if list_dictionaries is None:
-            return "[]"
+            return empty_list
         return json.dumps(list_dictionaries)
 
     @classmethod
