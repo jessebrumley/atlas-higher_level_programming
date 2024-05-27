@@ -25,20 +25,19 @@ class Base:
         """
         Returns a list of JSON strings
         """
-        if list_dictionaries is None:
+        if list_dictionaries is None or list_dictionaries == []:
             return "[]"
-        else:
-            return json.dumps(list_dictionaries)
+        return json.dumps(list_dictionaries)
 
     @classmethod
     def save_to_file(cls, list_objs):
         """
         class method to save a list of instances to a file
         """
-        filename = "{}.json".format(cls.__name__)
-        objects = []
-        if list_objs is not None:
-            for obj in list_objs:
-                objects.append(obj.to_dictionary())
-        with open(filename, 'w') as file:
-            file.write(cls.to_json_string(objects))
+        filename = cls.__name__ + ".json"
+        with open(filename, "w") as jsonfile:
+            if list_objs is None:
+                jsonfile.write("[]")
+            else:
+                list_dicts = [o.to_dictionary() for o in list_objs]
+                jsonfile.write(Base.to_json_string(list_dicts))
