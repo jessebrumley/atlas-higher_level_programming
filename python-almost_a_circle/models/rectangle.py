@@ -67,9 +67,8 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
-               
-        """returns the area value of the Rectangle instance
-
+        """
+        returns the area value of the Rectangle instance
         Returns:
             integer: area of Rectangle
         """
@@ -89,8 +88,8 @@ class Rectangle(Base):
             print("")
 
     def __str__(self):
-        """returns the properties of a Rectangle class as a string
-
+        """
+        returns the properties of a Rectangle class as a string
         Returns:
             string: Rectangle properties
         """
@@ -98,6 +97,6 @@ class Rectangle(Base):
         x = self.x
         y = self.y
         width = self.width
-        height= self.height
+        height = self.height
         return "[Rectangle] ({0}) {1}/{2} - {3}/{4}".format(
             id, x, y, width, height)
