@@ -8,7 +8,7 @@ class Base:
     Base Class model used as template for all other classes in this project
 
     Class Attributes:
-        __nb_objects (int): Number of Bases.
+        __nb_objects (int): Number of Bases
     """
 
     __nb_objects = 0
